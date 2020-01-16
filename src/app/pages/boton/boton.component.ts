@@ -16,7 +16,7 @@ export class BotonComponent implements OnInit {
     ) { }
 
   ngOnInit() {
-    this.apiPhotos.get()
+    this.apiPhotos.get<Array<IPhoto>>()
       .subscribe( datos => {
         this.photos = datos;
       }, err => {
