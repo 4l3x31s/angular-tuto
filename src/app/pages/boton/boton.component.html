@@ -1,0 +1,11 @@
+<button (click)="irDetalle()" >Ir Detalle</button>
+<br />
+<div *ngFor="let photo of photos" >
+  <h3>{{photo.title}}</h3>
+  <br />
+  <img src="{{ photo.thumbnailUrl }}" />
+  <br />
+
+</div>
+
+
